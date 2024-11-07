@@ -1,0 +1,117 @@
+/* General Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+}
+
+.dashboard-container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2a9d8f;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+/* Sections hidden by default */
+.section {
+    display: none;
+}
+
+/* Show the active section */
+.section.active {
+    display: block;
+}
+
+.section h3 {
+    margin-bottom: 10px;
+    color: #264653;
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    padding: 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h4 {
+    margin-bottom: 5px;
+    color: #264653;
+}
+
+.card p {
+    font-size: 1.2em;
+    color: #2a9d8f;
+}
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+#oxygenBar {
+    height: 100%;
+    background-color: #2a9d8f;
+    border-radius: 5px;
+}
+
+/* Nutrition Cards */
+.nutrition-card {
+    margin-bottom: 20px;
+}
+
+.food-log input, .food-log button {
+    margin-top: 10px;
+}
+
+.food-log ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.food-log li {
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+

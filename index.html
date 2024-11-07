@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Monitoring Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Health Dashboard</h2>
+            <ul>
+                <li data-target="vitals">Vitals</li>
+                <li data-target="activity">Activity</li>
+                <li data-target="sleep">Sleep</li>
+                <li data-target="nutrition">Nutrition</li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Vitals Section -->
+            <section class="section vitals" id="vitals">
+                <h3>Vitals</h3>
+                <div class="card">
+                    <h4>Heart Rate</h4>
+                    <p id="heartRate">72 BPM</p>
+                    <canvas id="heartRateChart" width="400" height="200"></canvas>
+                </div>
+                <div class="card">
+                    <h4>Blood Pressure</h4>
+                    <p id="bloodPressure">120/80</p>
+                    <input type="number" id="bpInput" placeholder="Enter BP (e.g., 120/80)">
+                    <button id="updateBP">Update</button>
+                </div>
+                <div class="card">
+                    <h4>Oxygen Level</h4>
+                    <p id="oxygenLevel">98%</p>
+                    <div class="progress-bar">
+                        <div id="oxygenBar" style="width: 98%;"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Activity Section -->
+            <section class="section activity" id="activity">
+                <h3>Daily Activity</h3>
+                <canvas id="activityChart" width="400" height="200"></canvas>
+            </section>
+
+            <!-- Sleep Section -->
+            <section class="section sleep" id="sleep">
+                <h3>Sleep Analysis</h3>
+                <canvas id="sleepChart" width="400" height="200"></canvas>
+            </section>
+
+            <!-- Nutrition Section (Placeholder) -->
+            <section class="section nutrition" id="nutrition">
+                <h3>Nutrition</h3>
+                <div class="nutrition-card">
+                    <h4>Daily Calorie Intake</h4>
+                    <canvas id="calorieChart" width="400" height="200"></canvas>
+                </div>
+                <div class="nutrition-card">
+                    <h4>Macronutrient Breakdown</h4>
+                    <canvas id="macronutrientChart" width="400" height="200"></canvas>
+                </div>
+                <div class="food-log">
+                    <h4>Food Log</h4>
+                    <input type="text" id="foodItem" placeholder="Enter food item">
+                    <button id="addFood">Add Food</button>
+                    <ul id="foodList"></ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
