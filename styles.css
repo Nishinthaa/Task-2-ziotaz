@@ -113,5 +113,80 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+/* Default styling for large screens (Desktop) */
+@media (min-width: 992px) {
+    .dashboard-container {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 250px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .card {
+        width: 30%;
+        margin-right: 10px;
+    }
+}
+
+/* Medium screens (Tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .card {
+        width: 45%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Small screens (Mobile phones) */
+@media (max-width: 767px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .sidebar ul li {
+        margin-bottom: 10px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .progress-bar, #oxygenBar {
+        height: 15px;
+    }
+
+    .food-log input, .food-log button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
 
 
